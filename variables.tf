@@ -1,19 +1,13 @@
-variable "aws_region" {
-  type    = string
-  default = "us-west-1"
+variable "ami" {
+  type        = string
+  description = "ami-id"
 }
-
-variable "db_table_name" {
-  type    = string
-  default = "terraform-learn"
+variable "instance_type" {
+  type        = string
+  default     = "t2.micro"
+  description = "subnet of cider block"
 }
-
-variable "db_read_capacity" {
-  type    = number
-  default = 1
-}
-
-variable "db_write_capacity" {
-  type    = number
-  default = 1
+variable "key" {
+  type        = string
+  description = "SSH-KEY"
 }
